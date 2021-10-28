@@ -144,7 +144,16 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    background-size: auto;
+  }
   .sag-box {
     display: none;
+  }
+  .register-box {
+    width: 80% !important;
+  }
+  .login-box {
+    width: 80%;
   }
 }
