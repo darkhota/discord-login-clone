@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 body {
   margin: 0px;
   padding: 0px;
   font-family: "Open Sans", sans-serif;
   background: url(bg.png) no-repeat;
   background-size: cover;
-  color: #8e9297;
+  color: #b9bbbe;
   line-height: 10px;
 }
 
 .login-box {
-  width: 781px;
+  width: 770px;
   height: 360px;
   background-color: #36393f;
   position: absolute;
@@ -18,19 +18,20 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
-  padding: 25px;
+  padding: 25px 8px;
+  padding-bottom: 32px !important;
 }
 
 .register-box {
-  width: 400px !important;
-  padding: 1rem;
+  width: 450px !important;
+  padding: 0.5rem 1rem !important;
   height: fit-content !important;
 }
 
 .login-ic-box {
   display: flex;
   align-content: stretch;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
@@ -45,36 +46,44 @@ body {
 
 .sol-box h2 {
   color: #fff;
+  font-weight: 600;
 }
 
 .sol-box span {
-  color: #72767d;
+  color: #b9bbbe;
+  font-size: 12px;
 }
 
 .form-box {
   font-size: 16px;
+  margin-top: 2rem;
 }
 
 .form-box h5 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 12px;
 }
 
 .sol-box input,
 .sol-box select {
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
   border-radius: 4px;
   background-color: #303338;
   border: 1px solid #212327;
   padding: 13px;
-  color: #dcddde;
+  color: rgb(114, 118, 125);
+}
+
+.register-box input,
+.register-box button {
+  width: 100% !important;
 }
 
 .sol-box select {
   width: 30% !important;
   padding-right: 0.5rem;
   margin-bottom: 1rem;
-  -webkit-appearance: none;
 }
 .sol-box select:focus-visible,
 .sol-box input:focus-visible {
@@ -84,7 +93,8 @@ body {
 .forgot {
   color: #00aff4;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
+  margin-bottom: 1rem;
 }
 
 .reg {
@@ -99,7 +109,7 @@ a {
   text-align: center;
   background-color: #5865f2;
   padding: 15px;
-  width: 100%;
+  width: 90%;
   color: white;
   border: none;
   font-weight: 700;
@@ -107,8 +117,8 @@ a {
 }
 
 .register {
-  color: #72767d;
-  font-size: 14px;
+  color: #72767d !important;
+  font-size: 12px;
   line-height: 40px;
 }
 
@@ -123,7 +133,7 @@ a {
 
 .sag-box {
   right: 10px;
-  width: 250px;
+  width: 240px;
   text-align: center;
   line-height: 20px;
 }
@@ -141,6 +151,16 @@ a {
 
 .mt-2 {
   margin-top: 1rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.light-wght {
+  font-weight: lighter;
+  color: #b9bbbe;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 768px) {
