@@ -164,16 +164,45 @@ strong {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    background-size: auto;
-  }
   .sag-box {
     display: none;
   }
   .register-box {
-    width: 80% !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding-top: 1rem !important;
   }
   .login-box {
-    width: 80%;
+    overflow: hidden;
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding-top: 40px;
+  }
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sol-box {
+    margin: 1rem;
+  }
+
+  .sol-box input,
+  .sol-box button {
+    width: 100%;
+  }
+  .sol-box span {
+    font-size: 14px;
+  }
+  .register-box > h2 {
+    margin-top: 6.6rem;
+  }
+
+  .sol-box h2 {
+    margin-top: 6.6rem;
   }
 }
